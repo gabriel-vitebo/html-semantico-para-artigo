@@ -52,14 +52,14 @@
       </div>
 
       <nav class="categories" aria-label="Categorias de produtos">
-        <div class="categories-content">
-          <a href="#">Eletrônicos</a>
-          <a href="#">Computadores</a>
-          <a href="#">Games</a>
-          <a href="#">Casa</a>
-          <a href="#">Acessórios</a>
-          <a href="#">Ofertas</a>
-        </div>
+        <ul class="categories-content">
+          <li><a href="#">Eletrônicos</a></li>
+          <li><a href="#">Computadores</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Casa</a></li>
+          <li><a href="#">Acessórios</a></li>
+          <li><a href="#">Ofertas</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -111,167 +111,175 @@
           <a href="#">Ver todas →</a>
         </div>
 
-        <div class="products-grid">
-          <article class="product-card">
-            <a href="#" class="product-image">
-              <span class="discount">-20%</span>
+        <ul class="products-grid">
+          <li>
+            <article class="product-card">
+              <a href="#" class="product-image">
+                <data class="discount" value="20">-20%</data>
 
-              <div class="product-placeholder">
-                <span>⌨</span>
+                <div class="product-placeholder">
+                  <span aria-hidden="true">⌨</span>
+                </div>
+              </a>
+
+              <div class="product-content">
+                <span class="product-category">
+                  Periféricos
+                </span>
+
+                <h3>
+                  <a href="#">
+                    Teclado Mecânico Pro
+                  </a>
+                </h3>
+
+                <p class="rating">
+                  <span aria-label="4.8 de 5 estrelas">★★★★★</span>
+                  <small>4.8 (128)</small>
+                </p>
+
+                <p class="old-price">
+                  R$ 449,90
+                </p>
+
+                <p class="price">
+                  R$ 359,90
+                  <small>à vista</small>
+                </p>
+
+                <button type="button" class="buy-button">
+                  Adicionar ao carrinho
+                </button>
               </div>
-            </a>
+            </article>
+          </li>
 
-            <div class="product-content">
-              <span class="product-category">
-                Periféricos
-              </span>
+          <li>
+            <article class="product-card">
+              <a href="#" class="product-image">
+                <data class="discount" value="15">-15%</data>
 
-              <h3>
-                <a href="#">
-                  Teclado Mecânico Pro
-                </a>
-              </h3>
+                <div class="product-placeholder">
+                  <span aria-hidden="true">🎧</span>
+                </div>
+              </a>
 
-              <div class="rating">
-                <span aria-label="4.8 de 5 estrelas">★★★★★</span>
-                <small>4.8 (128)</small>
+              <div class="product-content">
+                <span class="product-category">
+                  Áudio
+                </span>
+
+                <h3>
+                  <a href="#">
+                    Headset Wireless X1
+                  </a>
+                </h3>
+
+                <p class="rating">
+                  <span aria-label="4.9 de 5 estrelas">★★★★★</span>
+                  <small>4.9 (92)</small>
+                </p>
+
+                <p class="old-price">
+                  R$ 529,90
+                </p>
+
+                <p class="price">
+                  R$ 449,90
+                  <small>à vista</small>
+                </p>
+
+                <button type="button" class="buy-button">
+                  Adicionar ao carrinho
+                </button>
               </div>
+            </article>
+          </li>
 
-              <p class="old-price">
-                R$ 449,90
-              </p>
+          <li>
+            <article class="product-card">
+              <a href="#" class="product-image">
+                <data class="discount" value="10">-10%</data>
 
-              <p class="price">
-                R$ 359,90
-                <small>à vista</small>
-              </p>
+                <div class="product-placeholder">
+                  <span aria-hidden="true">🖱</span>
+                </div>
+              </a>
 
-              <button type="button" class="buy-button">
-                Adicionar ao carrinho
-              </button>
-            </div>
-          </article>
+              <div class="product-content">
+                <span class="product-category">
+                  Periféricos
+                </span>
 
-          <article class="product-card">
-            <a href="#" class="product-image">
-              <span class="discount">-15%</span>
+                <h3>
+                  <a href="#">
+                    Mouse Wireless Ultra
+                  </a>
+                </h3>
 
-              <div class="product-placeholder">
-                <span>🎧</span>
+                <p class="rating">
+                  <span aria-label="4.7 de 5 estrelas">★★★★★</span>
+                  <small>4.7 (215)</small>
+                </p>
+
+                <p class="old-price">
+                  R$ 199,90
+                </p>
+
+                <p class="price">
+                  R$ 179,90
+                  <small>à vista</small>
+                </p>
+
+                <button type="button" class="buy-button">
+                  Adicionar ao carrinho
+                </button>
               </div>
-            </a>
+            </article>
+          </li>
 
-            <div class="product-content">
-              <span class="product-category">
-                Áudio
-              </span>
+          <li>
+            <article class="product-card">
+              <a href="#" class="product-image">
+                <data class="discount" value="25">-25%</data>
 
-              <h3>
-                <a href="#">
-                  Headset Wireless X1
-                </a>
-              </h3>
+                <div class="product-placeholder">
+                  <span aria-hidden="true">🎮</span>
+                </div>
+              </a>
 
-              <div class="rating">
-                <span aria-label="4.9 de 5 estrelas">★★★★★</span>
-                <small>4.9 (92)</small>
+              <div class="product-content">
+                <span class="product-category">
+                  Games
+                </span>
+
+                <h3>
+                  <a href="#">
+                    Controle Wireless Neo
+                  </a>
+                </h3>
+
+                <p class="rating">
+                  <span aria-label="4.9 de 5 estrelas">★★★★★</span>
+                  <small>4.9 (341)</small>
+                </p>
+
+                <p class="old-price">
+                  R$ 399,90
+                </p>
+
+                <p class="price">
+                  R$ 299,90
+                  <small>à vista</small>
+                </p>
+
+                <button type="button" class="buy-button">
+                  Adicionar ao carrinho
+                </button>
               </div>
-
-              <p class="old-price">
-                R$ 529,90
-              </p>
-
-              <p class="price">
-                R$ 449,90
-                <small>à vista</small>
-              </p>
-
-              <button type="button" class="buy-button">
-                Adicionar ao carrinho
-              </button>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <a href="#" class="product-image">
-              <span class="discount">-10%</span>
-
-              <div class="product-placeholder">
-                <span>🖱</span>
-              </div>
-            </a>
-
-            <div class="product-content">
-              <span class="product-category">
-                Periféricos
-              </span>
-
-              <h3>
-                <a href="#">
-                  Mouse Wireless Ultra
-                </a>
-              </h3>
-
-              <div class="rating">
-                <span aria-label="4.7 de 5 estrelas">★★★★★</span>
-                <small>4.7 (215)</small>
-              </div>
-
-              <p class="old-price">
-                R$ 199,90
-              </p>
-
-              <p class="price">
-                R$ 179,90
-                <small>à vista</small>
-              </p>
-
-              <button type="button" class="buy-button">
-                Adicionar ao carrinho
-              </button>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <a href="#" class="product-image">
-              <span class="discount">-25%</span>
-
-              <div class="product-placeholder">
-                <span>🎮</span>
-              </div>
-            </a>
-
-            <div class="product-content">
-              <span class="product-category">
-                Games
-              </span>
-
-              <h3>
-                <a href="#">
-                  Controle Wireless Neo
-                </a>
-              </h3>
-
-              <div class="rating">
-                <span aria-label="4.9 de 5 estrelas">★★★★★</span>
-                <small>4.9 (341)</small>
-              </div>
-
-              <p class="old-price">
-                R$ 399,90
-              </p>
-
-              <p class="price">
-                R$ 299,90
-                <small>à vista</small>
-              </p>
-
-              <button type="button" class="buy-button">
-                Adicionar ao carrinho
-              </button>
-            </div>
-          </article>
-        </div>
+            </article>
+          </li>
+        </ul>
       </section>
 
       <section class="benefits" aria-labelledby="benefits-title">
@@ -279,40 +287,46 @@
           Benefícios da Nexo
         </h2>
 
-        <div class="benefits-content">
-          <article>
-            <span class="benefit-icon" aria-hidden="true">
-              ↻
-            </span>
+        <ul class="benefits-content">
+          <li>
+            <article>
+              <span class="benefit-icon" aria-hidden="true">
+                ↻
+              </span>
 
-            <div>
-              <h3>Devolução gratuita</h3>
-              <p>Você tem até 30 dias.</p>
-            </div>
-          </article>
+              <div>
+                <h3>Devolução gratuita</h3>
+                <p>Você tem até 30 dias.</p>
+              </div>
+            </article>
+          </li>
 
-          <article>
-            <span class="benefit-icon" aria-hidden="true">
-              ▣
-            </span>
+          <li>
+            <article>
+              <span class="benefit-icon" aria-hidden="true">
+                ▣
+              </span>
 
-            <div>
-              <h3>Compra segura</h3>
-              <p>Seus dados protegidos.</p>
-            </div>
-          </article>
+              <div>
+                <h3>Compra segura</h3>
+                <p>Seus dados protegidos.</p>
+              </div>
+            </article>
+          </li>
 
-          <article>
-            <span class="benefit-icon" aria-hidden="true">
-              ⚡
-            </span>
+          <li>
+            <article>
+              <span class="benefit-icon" aria-hidden="true">
+                ⚡
+              </span>
 
-            <div>
-              <h3>Entrega rápida</h3>
-              <p>Enviamos para todo o Brasil.</p>
-            </div>
-          </article>
-        </div>
+              <div>
+                <h3>Entrega rápida</h3>
+                <p>Enviamos para todo o Brasil.</p>
+              </div>
+            </article>
+          </li>
+        </ul>
       </section>
 
       <section class="newsletter" aria-labelledby="newsletter-title">
