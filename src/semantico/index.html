@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Nexo, marketplace fictício utilizado como demonstração de HTML semântico."
+    />
+
+    <title>Nexo Marketplace — HTML Semântico</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <aside class="demo-warning" aria-label="Aviso sobre a demonstração">
+      <strong>Demo visual:</strong>
+      busca, carrinho, produtos e formulários não possuem funcionalidade.
+    </aside>
+
+    <header class="header">
+      <div class="header-content">
+        <a href="../" class="logo" aria-label="Nexo - Voltar ao experimento">
+          nexo<span>.</span>
+        </a>
+
+        <form class="search" role="search">
+          <label class="sr-only" for="product-search">
+            Buscar produtos
+          </label>
+
+          <input
+            id="product-search"
+            name="search"
+            type="search"
+            placeholder="Buscar produtos..."
+          />
+
+          <button type="button">Buscar</button>
+        </form>
+
+        <nav class="user-navigation" aria-label="Navegação do usuário">
+          <a href="#">Minha conta</a>
+
+          <a href="#">
+            Carrinho
+            <span>2</span>
+          </a>
+        </nav>
+      </div>
+
+      <nav class="categories" aria-label="Categorias de produtos">
+        <div class="categories-content">
+          <a href="#">Eletrônicos</a>
+          <a href="#">Computadores</a>
+          <a href="#">Games</a>
+          <a href="#">Casa</a>
+          <a href="#">Acessórios</a>
+          <a href="#">Ofertas</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <div class="hero-copy">
+            <span class="eyebrow">
+              Tecnologia para o seu dia
+            </span>
+
+            <h1 id="hero-title">
+              Tudo que você precisa.
+              <strong>Em um só lugar.</strong>
+            </h1>
+
+            <p>
+              Encontre tecnologia, acessórios e produtos selecionados com
+              ofertas especiais todos os dias.
+            </p>
+
+            <a href="#ofertas" class="primary-button">
+              Ver ofertas
+            </a>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <span>TECH</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="products-section"
+        id="ofertas"
+        aria-labelledby="offers-title"
+      >
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">
+              Por tempo limitado
+            </span>
+
+            <h2 id="offers-title">
+              Ofertas em destaque
+            </h2>
+          </div>
+
+          <a href="#">Ver todas →</a>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card">
+            <a href="#" class="product-image">
+              <span class="discount">-20%</span>
+
+              <div class="product-placeholder">
+                <span>⌨</span>
+              </div>
+            </a>
+
+            <div class="product-content">
+              <span class="product-category">
+                Periféricos
+              </span>
+
+              <h3>
+                <a href="#">
+                  Teclado Mecânico Pro
+                </a>
+              </h3>
+
+              <div class="rating">
+                <span aria-label="4.8 de 5 estrelas">★★★★★</span>
+                <small>4.8 (128)</small>
+              </div>
+
+              <p class="old-price">
+                R$ 449,90
+              </p>
+
+              <p class="price">
+                R$ 359,90
+                <small>à vista</small>
+              </p>
+
+              <button type="button" class="buy-button">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a href="#" class="product-image">
+              <span class="discount">-15%</span>
+
+              <div class="product-placeholder">
+                <span>🎧</span>
+              </div>
+            </a>
+
+            <div class="product-content">
+              <span class="product-category">
+                Áudio
+              </span>
+
+              <h3>
+                <a href="#">
+                  Headset Wireless X1
+                </a>
+              </h3>
+
+              <div class="rating">
+                <span aria-label="4.9 de 5 estrelas">★★★★★</span>
+                <small>4.9 (92)</small>
+              </div>
+
+              <p class="old-price">
+                R$ 529,90
+              </p>
+
+              <p class="price">
+                R$ 449,90
+                <small>à vista</small>
+              </p>
+
+              <button type="button" class="buy-button">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a href="#" class="product-image">
+              <span class="discount">-10%</span>
+
+              <div class="product-placeholder">
+                <span>🖱</span>
+              </div>
+            </a>
+
+            <div class="product-content">
+              <span class="product-category">
+                Periféricos
+              </span>
+
+              <h3>
+                <a href="#">
+                  Mouse Wireless Ultra
+                </a>
+              </h3>
+
+              <div class="rating">
+                <span aria-label="4.7 de 5 estrelas">★★★★★</span>
+                <small>4.7 (215)</small>
+              </div>
+
+              <p class="old-price">
+                R$ 199,90
+              </p>
+
+              <p class="price">
+                R$ 179,90
+                <small>à vista</small>
+              </p>
+
+              <button type="button" class="buy-button">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a href="#" class="product-image">
+              <span class="discount">-25%</span>
+
+              <div class="product-placeholder">
+                <span>🎮</span>
+              </div>
+            </a>
+
+            <div class="product-content">
+              <span class="product-category">
+                Games
+              </span>
+
+              <h3>
+                <a href="#">
+                  Controle Wireless Neo
+                </a>
+              </h3>
+
+              <div class="rating">
+                <span aria-label="4.9 de 5 estrelas">★★★★★</span>
+                <small>4.9 (341)</small>
+              </div>
+
+              <p class="old-price">
+                R$ 399,90
+              </p>
+
+              <p class="price">
+                R$ 299,90
+                <small>à vista</small>
+              </p>
+
+              <button type="button" class="buy-button">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="benefits" aria-labelledby="benefits-title">
+        <h2 id="benefits-title" class="sr-only">
+          Benefícios da Nexo
+        </h2>
+
+        <div class="benefits-content">
+          <article>
+            <span class="benefit-icon" aria-hidden="true">
+              ↻
+            </span>
+
+            <div>
+              <h3>Devolução gratuita</h3>
+              <p>Você tem até 30 dias.</p>
+            </div>
+          </article>
+
+          <article>
+            <span class="benefit-icon" aria-hidden="true">
+              ▣
+            </span>
+
+            <div>
+              <h3>Compra segura</h3>
+              <p>Seus dados protegidos.</p>
+            </div>
+          </article>
+
+          <article>
+            <span class="benefit-icon" aria-hidden="true">
+              ⚡
+            </span>
+
+            <div>
+              <h3>Entrega rápida</h3>
+              <p>Enviamos para todo o Brasil.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter" aria-labelledby="newsletter-title">
+        <div>
+          <span class="eyebrow">
+            Fique por dentro
+          </span>
+
+          <h2 id="newsletter-title">
+            Ofertas direto no seu e-mail.
+          </h2>
+
+          <p>
+            Cadastre-se para receber novidades e promoções.
+          </p>
+        </div>
+
+        <form>
+          <label class="sr-only" for="newsletter-email">
+            Seu melhor e-mail
+          </label>
+
+          <input
+            id="newsletter-email"
+            name="email"
+            type="email"
+            placeholder="Seu melhor e-mail"
+          />
+
+          <button type="button">
+            Cadastrar
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="../" class="logo">
+            nexo<span>.</span>
+          </a>
+
+          <p>
+            Um marketplace fictício criado como demonstração de HTML semântico.
+          </p>
+        </div>
+
+        <nav aria-label="Links institucionais">
+          <h2>Institucional</h2>
+
+          <a href="#">Sobre nós</a>
+          <a href="#">Contato</a>
+          <a href="#">Termos de uso</a>
+          <a href="#">Privacidade</a>
+        </nav>
+
+        <nav aria-label="Ajuda">
+          <h2>Ajuda</h2>
+
+          <a href="#">Central de ajuda</a>
+          <a href="#">Entrega</a>
+          <a href="#">Trocas e devoluções</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2026 Nexo. Projeto demonstrativo.
+        </p>
+
+        <a href="../divs/">
+          Ver versão apenas com divs →
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Uma demonstração prática da diferença entre HTML semântico e uma estrutura baseada principalmente em divs."
+    />
+
+    <title>HTML Semântico vs. Divs</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="content">
+        <span class="badge">Experimento</span>
+
+        <h1>
+          HTML Semântico
+          <span>vs.</span>
+          Divs
+        </h1>
+
+        <p class="description">
+          Duas páginas visualmente iguais. Duas estruturas completamente
+          diferentes.
+        </p>
+
+        <p class="secondary-text">
+          Este projeto é apenas uma demonstração visual. As duas versões
+          simulam a página inicial de um marketplace, mas nenhuma funcionalidade
+          foi implementada.
+        </p>
+
+        <div class="options">
+          <a class="card" href="./semantico/">
+            <div class="card-icon">&lt;/&gt;</div>
+
+            <div>
+              <span class="card-label">Versão 01</span>
+
+              <h2>HTML Semântico</h2>
+
+              <p>
+                Estruturada utilizando elementos que representam o significado
+                de cada parte da página.
+              </p>
+            </div>
+
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="card" href="./divs/">
+            <div class="card-icon">&lt;div&gt;</div>
+
+            <div>
+              <span class="card-label">Versão 02</span>
+
+              <h2>Apenas Divs</h2>
+
+              <p>
+                A mesma interface construída utilizando divs para praticamente
+                toda a estrutura.
+              </p>
+            </div>
+
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <p class="tip">
+          💡 Busca, carrinho, produtos, formulários e demais interações são
+          apenas ilustrativos.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
